@@ -1,0 +1,44 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+aside {
+    padding: 20px;
+    position: absolute;
+}
+
+.wrapper{
+    display: flex;
+    height: 100%;
+}
+
+#grid{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    background-color: lightgray;
+    width : 700px;
+    height : 600px;
+    border: 2px solid black;
+    margin: auto;
+    background-color: lightslategray;
+}
+
+.case{
+    border: 2px solid black;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background-color: white;
+}
+
+.case:hover{
+    cursor: pointer;
+}
+
+
