@@ -8,17 +8,56 @@
     <title>Puissance 4</title>
 </head>
 <body>
-   <aside>
-    <div id="tour_joueur">
-        player : <span></span>
-    </div>
-    <button id="reset">Reset</button>
-   </aside>
-    <div class="wrapper">  
-        <section id="grid">
-            
-        </section>        
-    </div>   
+    <header>    
+        <div class="logo">
+            <img src="img/codinggame logo.jpg" alt="logo codinggame">        
+        </div>    
+        <h1>Ultimate Puissance 4</h1>
+        <aside id="time">150s</aside>
+    </header>
+   
+    <section>
+        <div class="player1">
+            <h2>Thierry</h2>
+            <div class="score">
+                <img src="img/stars.png" alt="stars">
+                <img src="img/stars.png" alt="stars">
+                <img src="img/stars.png" alt="stars">
+            </div>
+            <img src="img/p1.png" alt="avatar player1" class="avatar">
+        </div>
+
+        <div class="player2">
+            <h2>Johnathan</h2>
+            <div class="score">
+                <img src="img/stars.png" alt="stars">
+                <img src="img/stars.png" alt="stars">
+            </div>
+            <img src="img/p2.png" alt="avatar player2" class="avatar">
+        </div>
+
+        <div id="grid"></div>        
+    </section> 
+
+    <footer>
+        <form action="#" method="get">
+            <label for="rows">Lignes</label>
+            <input type="number" name="rows" id="rows" value="6" size="2" min="1" max="10">
+
+            <label for="columns">Colonnes</label>
+            <input type="number" name="columns" id="columns" value="7" size="1" min="2" max="10">
+
+            <label for="chain">Chaine</label>
+            <input type="number" name="chain" id="chain" value="4" size="1" min="2" max="5">
+
+            <div class="btnConfig">
+                <input type="submit" value="Start">
+                <input type="reset" value="Reset">
+            </div>
+
+        </form>
+        <p>Copyright novembre2021 -- John/Thierry</p>
+    </footer> 
 
     <script src="js/Grid.js"></script>
     <script src="js/Player.js"></script>
