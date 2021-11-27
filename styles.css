@@ -59,51 +59,51 @@ header img{
 }
 
 /* Main body */
-section{
+#mainBody{
     display: flex; 
     position: relative; 
 }
 
-section .player1, section .player2{
+#mainBody .player1, #mainBody .player2{
     position: absolute;
     top: 0;
     padding: 0 20px;
-    width:55.1%;
+    width:56%;
     height: 100%;
 }
 
-section .player1{
+#mainBody .player1{
     left: 0;
     background-color: rgb(0,164,255); 
     clip-path: polygon(0% 0%, 75% 0%, 100% 100%, 0% 100%);
 }
 
-section .player2{
+#mainBody .player2{
     right: 0;
     background-color: rgb(188,111,255);
     text-align: right;
     clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 25% 100%);
 }
 
-section h2{
+#mainBody h2{
     text-shadow:1px 1px 2px black;
 }
 
-section .score img{
+#mainBody .score img{
     height: 50px;
 }
 
-section .avatar{
+#mainBody .avatar{
     height: 75%;
     position: absolute;
     bottom: 20px;
 }
 
-section .player1 .avatar{
+#mainBody .player1 .avatar{
     left: 20px;
 }
 
-section .player2 .avatar{
+#mainBody .player2 .avatar{
     right: 20px;
 }
 
@@ -174,6 +174,29 @@ footer p{
     font-family: "Chiller";
     font-size: 35px;
     text-shadow: 4px 4px 8px black;
+}
+
+
+@media (max-width: 1300px) {
+    header .logo img{
+        height: 3.5em;
+    }
+
+    header h1{
+        font-size: 25px;
+    }
+
+    #mainBody h2{
+        margin-bottom: 0;
+    }
+
+    #mainBody .score img{
+        height: 30px;
+    }
+
+    #mainBody .avatar{
+        height: 65%;
+    }
 }
 
 

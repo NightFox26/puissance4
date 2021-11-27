@@ -10,9 +10,9 @@ let sectionGrid = document.querySelector("#grid")
 joueur1.isPlaying = true;
 
 // action sur le btn reset
-document.querySelector("#reset").addEventListener("click", function() {
-    reset();
-})
+// document.querySelector("#reset").addEventListener("click", function() {
+//     reset();
+// })
 
 function changePlayer(){
     joueur1.isPlaying = !joueur1.isPlaying;

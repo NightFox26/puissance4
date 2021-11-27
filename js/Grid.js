@@ -8,7 +8,7 @@ class Grid {
         this.init()
     }
 
-    init() {
+    init() {        
         let section = document.querySelector("#grid")
         let thhis = this;
         for (let i= 0; i < this.rows; i++) {
@@ -27,10 +27,20 @@ class Grid {
             } 
         }
 
+        let cellSize = this.calcMaxHeightRowForScreen();
         section.style.gridTemplateColumns="repeat(" + this.columns + ", 1fr)"
         section.style.gridTemplateRows="repeat(" + this.rows +", 1fr)"
-        section.style.width=(100 * this.columns) + "px"
-        section.style.height=(100 * this.rows) + "px"
+        section.style.width=(cellSize * this.columns) + "px"
+        section.style.height=(cellSize * this.rows) + "px"
+    }
+
+    calcMaxHeightRowForScreen(){
+        let heigtContainer = document.querySelector("#mainBody").offsetHeight;
+        let heightCell = (heigtContainer-100)/this.rows;
+        console.log(heightCell)
+        if(heightCell>100){heightCell=100}
+        return heightCell;
+
     }
 
     setToken(div) {
